@@ -1,7 +1,10 @@
 // components/EventList.js
+"use client";
+
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
+// import { eventItem } from "./event.jsx";
 
 const EventList = () => {
   const [events, setEvents] = useState([]);
