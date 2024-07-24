@@ -1,8 +1,8 @@
 "use client";
 //import react from "React";
 
-import { EventList } from "@/components/eventList";
-// import { LoginForm } from "@/components/LoginForm.jsx";
+import { EventList } from "../components/EventList.js";
+import { LoginForm } from "@/components/LoginForm.jsx";
 
 export default function Home() {
   return (
@@ -14,4 +14,7 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
+
+
+
