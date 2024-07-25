@@ -69,4 +69,11 @@ async function deleteDocument(db, collectionName, id) {
   }
 }
 
-export { getAllDocuments, addDocument, updateDoc, deleteDoc };
+export {
+  getAllDocuments,
+  addDocument,
+  updateDoc,
+  deleteDoc,
+  collection,
+  getDocs,
+};
