@@ -20,7 +20,7 @@ const EventList = () => {
     };
 
     fetchEvents();
-  };
+  });
 
   return (
     <div className="p-4">
