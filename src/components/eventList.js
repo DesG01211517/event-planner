@@ -1,6 +1,24 @@
-const EventList = ({ events, fetchEvents, setCurrentEvent }) => {
-  const handleDelete = async (id) => {
-    await deleteDoc(doc(db, "events", id));
+// components/EventList.js
+"use client";
+
+import React, { useEffect, useState } from "react";
+import { collection, getDocs } from "../utils/firebaseUtils";
+// import { db } from "firebase";
+
+const EventList = () => {
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      const eventsCollection = collection(db, "events");
+      const eventSnapshot = await getDocs(eventsCollection);
+      const eventList = eventSnapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setEvents(eventList);
+    };
+
     fetchEvents();
   };
 
