@@ -1,7 +1,7 @@
 "use client";
 
 // import { EventList } from "@/components/EventForm.jsx";
-import { LoginForm } from "../components/LoginForm.jsx";
+import  LoginForm  from "../components/LoginForm.jsx";
 import RegistrationForm from "@/components/RegisterForm"; 
 
 export default function Home() {
