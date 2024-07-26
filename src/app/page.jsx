@@ -17,31 +17,31 @@ export default function Home() {
         </p>
       </div>
       <div className="relative w-full flex flex-wrap justify-center gap-6 mb-8">
-        <div className="card transform transition duration-300 hover:scale-125">
+        <div className="card transform transition duration-300 hover:scale-125 p-4 border-2 border-gray-300 rounded-lg bg-white shadow-lg w-full max-w-md">
           <h2 className="text-xl font-semibold mb-2">Create Events</h2>
           <p className="text-gray-700">
             Easily create events with our simple form and keep track of all your
             important dates.
           </p>
         </div>
-        <div className="card transform transition duration-300 hover:scale-125">
+        <div className="card transform transition duration-300 hover:scale-125 p-4 border-2 border-gray-300 rounded-lg bg-white shadow-lg w-full max-w-md">
           <h2 className="text-xl font-semibold mb-2">Manage Events</h2>
           <p className="text-gray-700">
             Update or delete events as needed, and keep everything organized in
             one place.
           </p>
         </div>
-        <div className="card transform transition duration-300 hover:scale-125">
+        <div className="card transform transition duration-300 hover:scale-125 p-4 border-2 border-gray-300 rounded-lg bg-white shadow-lg w-full max-w-md">
           <h2 className="text-xl font-semibold mb-2">Stay Organized</h2>
           <p className="text-gray-700">
             Never miss a deadline again with our easy-to-use event planner tool.
           </p>
         </div>
-        <div className="card transform transition duration-300 hover:scale-125">
-          {/* <LoginForm /> */}
+        <div className="card transform transition duration-300 hover:scale-125 p-4 border-2 border-gray-300 rounded-lg bg-white shadow-lg w-full max-w-md">
+          <LoginForm />
         </div>
-        <div className="card transform transition duration-300 hover:scale-125">
-          {/* <RegistrationForm /> */}
+        <div className="card transform transition duration-300 hover:scale-125 p-4 border-2 border-gray-300 rounded-lg bg-white shadow-lg w-full max-w-md">
+          <RegistrationForm />
         </div>
       </div>
     </main>
