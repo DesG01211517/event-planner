@@ -72,8 +72,8 @@ async function deleteDocument(db, collectionName, id) {
 export {
   getAllDocuments,
   addDocument,
-  updateDoc,
-  deleteDoc,
+  updateDocument,
+  deleteDocument,
   collection,
   getDocs,
 };

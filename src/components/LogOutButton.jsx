@@ -3,8 +3,12 @@ import { logout } from "@/utils/authUtils";
 
 const LogoutButton = () => {
   const handleLogout = async () => {
+    try {
     // Handle logout logic here
-    logout();
+    await logout();
+    } catch (error) {
+      console.log("error during logout;", error);
+    }
   };
 
   return (

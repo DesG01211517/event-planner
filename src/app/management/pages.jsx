@@ -1,7 +1,17 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import { EventForm } from "../components/EventForm.js";
-import { EventList } from "../components/EventList.js"
+import { EventForm } from "../components/EventForm.jsx";
+import { EventList } from "../components/EventList.jsx";
+import { LogOutButton } from "../components/LogOutButton.jsx";
+import {
+    getAllDocuments,
+    addDocument,
+    updateDocument,
+    deleteDocument,
+    collection,
+    getDocs,
+  } from "../utils/firebaseUtils.js";
+  import { db, auth } from "../../../firebase.config.js";
 
 
 
@@ -11,9 +21,7 @@ import { EventList } from "../components/EventList.js"
 
 
 export default function Management Page() {
-  return (
-    <div>Management Page</div>
-  )
+  const [event, setEvents] = useState([]);
+  
 }
 
-<EventForm />
