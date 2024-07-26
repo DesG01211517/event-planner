@@ -49,3 +49,5 @@ const RegistrationForm = () => {
     </div>
   );
 };
+
+export {RegistrationForm};

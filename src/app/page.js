@@ -1,16 +1,22 @@
 "use client";
 
+import { EventList } from "@/components/EventForm.js";
+import LoginForm from "@/components/LoginForm"; // Adjust the import path if needed
+import RegistrationForm from "@/components/RegisterForm"; // Adjust the import path if needed
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gray-100">
+    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-gray-100">
       <h1 className="text-4xl font-bold mb-8">Event Planner</h1>
-      <div className="relative w-full flex flex-wrap justify-center gap-6">
-        <p className="text-lg font-extrabold text-gray-700 border border-gray-300 p-4 mb-4 rounded-md">
+      <div className="text-center mb-8">
+        <p className="text-lg font-extrabold text-gray-700 border-2 border-gray-500 p-4 mb-4 rounded-md text-center">
           An event planner helps you stay organized, manage your time
           effectively, and ensure that you never miss an important date or
           deadline. Use our event planner to streamline your tasks and improve
           productivity.
         </p>
+      </div>
+      <div className="relative w-full flex flex-wrap justify-center gap-6 mb-8">
         <div className="card transform transition duration-300 hover:scale-125">
           <h2 className="text-xl font-semibold mb-2">Create Events</h2>
           <p className="text-gray-700">
@@ -30,6 +36,12 @@ export default function Home() {
           <p className="text-gray-700">
             Never miss a deadline again with our easy-to-use event planner tool.
           </p>
+        </div>
+        <div className="card transform transition duration-300 hover:scale-125">
+          {/* <LoginForm /> */}
+        </div>
+        <div className="card transform transition duration-300 hover:scale-125">
+          {/* <RegistrationForm /> */}
         </div>
       </div>
     </main>
