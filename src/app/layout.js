@@ -14,7 +14,18 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <header className="w-100">
           <nav className="flex justify-center w-100 font-bold">
-            <h1>Home</h1>
+            <link
+              className="m-1 text-red-400 hover:text-red-600"
+              href="/src/app/page.jsx"
+            >
+              Home
+            </link>
+            <link
+              className="m-1 text-red-400 hover:text-red-600"
+              href="/src/app/management/page.jsx"
+            >
+              Management
+            </link>
           </nav>
         </header>
         {children}
