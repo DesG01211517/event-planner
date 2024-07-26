@@ -1,11 +1,15 @@
 import React from "react";
+import { useRouter } from "next/navigation";
 import { logout } from "@/utils/authUtils";
 
 const LogoutButton = () => {
+  const router = useRouter();
+
   const handleLogout = async () => {
     try {
     // Handle logout logic here
     await logout();
+    router.push("/");
     } catch (error) {
       console.log("error during logout;", error);
     }

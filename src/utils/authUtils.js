@@ -1,10 +1,11 @@
 import {
+  getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
 
-import { auth } from "../../firebase.config";
+import { useRouter } from "next/router";
 
 async function registerUser(email, password) {
   createUserWithEmailAndPassword(auth, email, password)
@@ -34,6 +35,7 @@ async function login(email, password) {
 }
 
 async function logout() {
+  const auth = getAuth();
   signOut(auth)
     .then(() => {
       console.log("user logged out");
