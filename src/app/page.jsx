@@ -37,11 +37,17 @@ export default function Home() {
             Never miss a deadline again with our easy-to-use event planner tool.
           </p>
         </div>
-        <div className="card transform transition duration-300 hover:scale-125 p-4 border-2 border-gray-300 rounded-lg bg-white shadow-lg w-full max-w-md">
-          <LoginForm />
         </div>
-        <div className="card transform transition duration-300 hover:scale-125 p-4 border-2 border-gray-300 rounded-lg bg-white shadow-lg w-full max-w-md">
-          <RegistrationForm />
+      <div className="flex flex-col md:flex-row gap-6 w-full max-w-4xl">
+        <div className="flex-1">
+          <div className="card transform transition duration-300 hover:scale-125 p-4 border-2 border-gray-300 rounded-lg bg-white shadow-lg mx-auto w-full max-w-md">
+            <LoginForm />
+          </div>
+        </div>
+        <div className="flex-1">
+          <div className="card transform transition duration-300 hover:scale-125 p-4 border-2 border-gray-300 rounded-lg bg-white shadow-lg mx-auto w-full max-w-md">
+            <RegistrationForm />
+          </div>
         </div>
       </div>
     </main>
