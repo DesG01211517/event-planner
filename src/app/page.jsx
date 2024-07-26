@@ -1,8 +1,8 @@
 "use client";
 
 // import { EventList } from "@/components/EventForm.jsx";
-import { LoginForm } from "@/components/LoginForm"; // Adjust the import path if needed
-import RegistrationForm from "@/components/RegisterForm"; // Adjust the import path if needed
+import { LoginForm } from "../components/LoginForm.jsx";
+import RegistrationForm from "@/components/RegisterForm"; 
 
 export default function Home() {
   return (

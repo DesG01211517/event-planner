@@ -17,15 +17,13 @@ export default function RootLayout({ children }) {
             <link
               className="m-1 text-red-400 hover:text-red-600"
               href="/src/app/page.jsx"
-            >
-              Home
-            </link>
+            />
+            Home
             <link
               className="m-1 text-red-400 hover:text-red-600"
-              href="/src/app/management/page.jsx"
-            >
-              Management
-            </link>
+              href="/src/app/management/pages.jsx"
+            />
+            Management
           </nav>
         </header>
         {children}
