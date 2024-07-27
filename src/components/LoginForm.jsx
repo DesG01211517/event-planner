@@ -1,16 +1,23 @@
 import { useState } from 'react';
 import { login } from '@/utils/authUtils';
+import { useRouter } from 'next/router';
 
 const LoginForm = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-  
+    const router = useRouter;
+
     const handleSubmit = async (e) => {
       e.preventDefault();
-      // Handle form submission logic here
+      try {
+        await login(email, password);
+        router.push('/management/pages.jsx');
+      } catch (error) {
+      // Handle form submission logic
       console.log('Email:', email);
       console.log('Password:', password);
       await login(email, password);
+      }
     };
   
     return (
