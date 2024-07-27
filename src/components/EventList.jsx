@@ -2,7 +2,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { collection, getDocs } from "../utils/firebaseUtils";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase.config";
 // import { db } from "firebase";
 
 const EventList = () => {
@@ -20,7 +21,7 @@ const EventList = () => {
     };
 
     fetchEvents();
-  });
+  }, []);
 
   return (
     <div className="p-4">

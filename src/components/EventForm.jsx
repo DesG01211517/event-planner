@@ -1,6 +1,6 @@
 "use Client";
 import { useState, useEffect } from "react";
-import { db } from "firebase/firestore";
+import { db } from "../../firebase.config";
 import {
   collection,
   addDoc,
@@ -29,6 +29,7 @@ const EventForm = ({ fetchEvents, currentEvent, setCurrentEvent }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (description && location && dueDate) {
+      try {
       if (currentEvent) {
         const eventDoc = doc(db, "events", currentEvent.id);
         await updateDoc(eventDoc, {
@@ -50,6 +51,9 @@ const EventForm = ({ fetchEvents, currentEvent, setCurrentEvent }) => {
       setLocation("");
       setDueDate("");
       setCurrentEvent(null);
+    } catch (error) {
+      console.log("Error adding/updating event:", error);
+    } 
     }
   };
 

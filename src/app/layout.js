@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
             </Link>
             <Link
               className="m-0 text-red-400 hover:text-red-600"
-              href="/src/app/management/pages.jsx"
+              href="/management"
             >
               Management
             </Link>

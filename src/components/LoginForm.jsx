@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { login } from '@/utils/authUtils';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 const LoginForm = () => {
     const [email, setEmail] = useState('');
@@ -11,12 +11,12 @@ const LoginForm = () => {
       e.preventDefault();
       try {
         await login(email, password);
-        router.push('/management/pages.jsx');
+        router.push("/management");
+        console.log("rerouted");
       } catch (error) {
       // Handle form submission logic
       console.log('Email:', email);
       console.log('Password:', password);
-      await login(email, password);
       }
     };
   
