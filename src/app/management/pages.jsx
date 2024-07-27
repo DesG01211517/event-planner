@@ -16,7 +16,7 @@ const ManagementPage = () => {
     const [currentUser, setCurrentUser] = useState(null);
     const [events, setEvents] = useState([]);
     const [currentEvent, setCurrentEvent] = useState(null);
-    const auth = getAuth();
+    // const auth = getAuth();
     const router = useRouter();
   
     useEffect(() => {
