@@ -1,3 +1,23 @@
+# The Event Planner is a project demonstrating the use CRUD commands with user interaction creating a single sign on and password to access the users' data from an external API (application programming interface).
+
+[demo]: https://github.com/DesG01211517/event-planner
+
+        event-planner-eight-theta.vercel.app
+
+Author: Desmon Garrison email: desmongarrison2@gmail.com
+
+Acknowledgements
+
+- Instructor: Thomas Basham
+- Codex Classmates
+- https://www.w3schools.com/tags/default.asp
+- https://financialmodelingprep.com/developer/docs/
+- https://chat.openai.com/
+- https://identity.getpostman.com/
+- https://site.financialmodelingprep.com/
+- https://nextjs.org/
+- https://firebase.google.com/docs/firestore
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
