@@ -11,7 +11,7 @@ const LoginForm = () => {
       e.preventDefault();
       try {
         await login(email, password);
-        router.push("/management");
+        router.push("/management/page.jsx");
         console.log("rerouted");
       } catch (error) {
       // Handle form submission logic
