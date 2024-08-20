@@ -37,7 +37,7 @@ async function getAllDocuments(db, collectionName) {
 async function addDocument(db, collectionName, data) {
   try {
     const docRef = await addDoc(collection(db, collectionName), data);
-    console.log("Document written with ID: ", docRef.id);
+    // console.log("Document written with ID: ", docRef.id);
   } catch (e) {
     console.error("Error adding document: ", e);
   }
@@ -50,10 +50,10 @@ async function updateDocument(db, collectionName, id, data) {
     if (docRef) {
       await updateDoc(docRef, data);
     } else {
-      console.log("No Reference", id);
+      // console.log("No Reference", id);
     }
   } catch (error) {
-    console.log("Error updating", error);
+    // console.log("Error updating", error);
   }
 }
 
@@ -65,7 +65,7 @@ async function deleteDocument(db, collectionName, id) {
       console.log("Document deleted", docRef.id);
     }
   } catch (error) {
-    console.log("Error deleting document", error);
+    // console.log("Error deleting document", error);
   }
 }
 

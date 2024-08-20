@@ -11,7 +11,7 @@ const LogoutButton = () => {
     await logout();
     router.push("/");
     } catch (error) {
-      console.log("error during logout;", error);
+      // console.log("error during logout;", error);
     }
   };
 

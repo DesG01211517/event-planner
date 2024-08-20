@@ -52,7 +52,7 @@ const EventForm = ({ fetchEvents, currentEvent, setCurrentEvent }) => {
       setDueDate("");
       setCurrentEvent(null);
     } catch (error) {
-      console.log("Error adding/updating event:", error);
+      // console.log("Error adding/updating event:", error);
     } 
     }
   };

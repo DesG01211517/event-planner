@@ -8,8 +8,8 @@ const RegistrationForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Handle form submission logic here
-    console.log('Email:', email);
-    console.log('Password:', password);
+    // console.log('Email:', email);
+    // console.log('Password:', password);
     await registerUser(email, password);
   };
 

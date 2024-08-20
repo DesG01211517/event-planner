@@ -15,8 +15,8 @@ const LoginForm = () => {
         console.log("rerouted");
       } catch (error) {
       // Handle form submission logic
-      console.log('Email:', email);
-      console.log('Password:', password);
+      // console.log('Email:', email);
+      // console.log('Password:', password);
       }
     };
   
